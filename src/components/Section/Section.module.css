@@ -1,0 +1,180 @@
+.section {
+  padding: 2rem 2rem 1rem 2rem;
+  background: #ffffff;
+  position: relative;
+}
+
+.title {
+  color: #0d6efd;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 1.8rem 0;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #6f42c1);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.section:hover .title::after {
+  width: 120px;
+}
+
+.content {
+  line-height: 1.7;
+  color: #2d3748;
+  font-size: 1.6rem;
+}
+
+.content p {
+  margin: 1.4rem 0;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.content span {
+  font-size: 1.6rem;
+}
+
+.content a {
+  color: #0a58ca;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #d0e2ff;
+  padding-bottom: 0.1rem;
+  margin-right: 1.2rem;
+}
+
+.content a:hover {
+  color: #0a58ca;
+  border-bottom-color: #0d6efd;
+}
+
+.content ul {
+  padding-left: 2rem;
+  margin: 1.4rem 0;
+}
+
+.content li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  position: relative;
+  padding-left: 0.5rem;
+  text-align: justify;
+}
+
+.content li::before {
+  content: "•";
+  color: #0d6efd;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+  position: absolute;
+  left: 0;
+  top: -0.1em;
+}
+
+.content ul ul {
+  margin: 1rem 0;
+  padding-left: 1.8rem;
+}
+
+.content ul ul li {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.content ul ul li::before {
+  content: "◦";
+  color: #6f42c1;
+  font-size: 1.6rem;
+}
+
+.content strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.content u {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+
+  .content p,
+  .content span,
+  .content a {
+    font-size: 1.5rem;
+  }
+
+  .content ul {
+    padding-left: 1.5rem;
+  }
+
+  .content li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .title::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .section:hover .title::after {
+    width: 90px;
+  }
+
+  .content {
+    font-size: 1.4rem;
+  }
+
+  .content p,
+  .content span,
+  .content a,
+  .content li {
+    font-size: 1.4rem;
+  }
+
+  .content a {
+    margin-right: 1rem;
+    border-bottom: 1px solid #d0e2ff;
+  }
+}
