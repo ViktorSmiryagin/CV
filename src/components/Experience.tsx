@@ -7,7 +7,7 @@ export const Experience = () => {
       <div className={styles.content}>
         <ul>
           <li>
-            <strong>Inctagram (ноябрь 2024 | настоящее время)</strong>
+            <strong>IT-INCUBATOR (ноябрь 2024 | настоящее время)</strong>
             <ul>
               <li>
                 <u>Функции:</u> анализ и уточнение требований, составление и
