@@ -41,19 +41,19 @@ const skillsData: SkillCategory[] = [
         name: "DevTools",
         icon: DevTools,
       },
-      {
-        name: "SQL",
-        icon: SQL,
-      },
-      {
-        name: "Charles Proxy",
-        icon: CharlesProxy,
-      },
     ],
   },
   {
     title: "Уверенные",
     skills: [
+      {
+        name: "Charles Proxy",
+        icon: CharlesProxy,
+      },
+      {
+        name: "SQL",
+        icon: SQL,
+      },
       {
         name: "Swagger",
         icon: Swagger,
@@ -62,19 +62,20 @@ const skillsData: SkillCategory[] = [
         name: "Postman",
         icon: Postman,
       },
-      {
-        name: "Docker",
-        icon: Docker,
-      },
-      {
-        name: "PrismaSt",
-        icon: Prisma,
-      },
+
     ],
   },
   {
     title: "Базовые",
     skills: [
+      {
+        name: "PrismaSt",
+        icon: Prisma,
+      },
+      {
+        name: "Docker",
+        icon: Docker,
+      },
       {
         name: "JMeter",
         icon: JMeter,
